@@ -1,0 +1,73 @@
+name: khp-demo
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: khp-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: khp
+      POSTGRES_USER: khp_app
+      POSTGRES_PASSWORD: khp_app_password
+    expose:
+      - "5432"
+    volumes:
+      - khp_pgdata:/var/lib/postgresql/data
+    networks:
+      - khp-data-net
+
+  redis:
+    image: redis:7-alpine
+    container_name: khp-redis
+    restart: unless-stopped
+    expose:
+      - "6379"
+    networks:
+      - khp-data-net
+
+  backend:
+    build:
+      context: ./backend
+    container_name: khp-backend
+    restart: unless-stopped
+    environment:
+      APP_PORT: "8700"
+      DATABASE_URL: "postgresql+psycopg://khp_app:khp_app_password@postgres:5432/khp"
+      JWT_SECRET: "devsecret"
+      CORS_ALLOW_ORIGINS: "https://kph.pjcloud.store"
+      REDIS_URL: "redis://redis:6379/0"
+      DEMO_IDENTITY_VERIFICATION: "true"
+      DEMO_IDENTITY_CODE: "000000"
+      APP_AUTO_INIT: "true"
+    expose:
+      - "8700"
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - khp-net
+      - khp-data-net
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: "http://localhost:8700/api/v1"
+        VITE_WS_BASE_URL: "ws://localhost:8700"
+    container_name: khp-frontend
+    restart: unless-stopped
+    expose:
+      - "3700"
+    depends_on:
+      - backend
+    networks:
+      - khp-net
+
+volumes:
+  khp_pgdata:
+
+networks:
+  khp-net:
+    external: true
+  khp-data-net:
+    internal: true

@@ -1,0 +1,54 @@
+name: khp-prod
+
+services:
+  redis:
+    image: redis:7-alpine
+    expose:
+      - "6379"
+    restart: unless-stopped
+    networks:
+      - khp-data-net
+
+  backend:
+    build:
+      context: ./backend
+    environment:
+      APP_PORT: "8700"
+      # 운영(Postgres 기설치) 예시: 컨테이너에서 호스트 DB로 접근하려면 host-gateway 설정을 사용하세요.
+      DATABASE_URL: "postgresql+psycopg://khp_app:CHANGE_ME@host.docker.internal:5432/khp"
+      JWT_SECRET: "CHANGE_ME"
+      CORS_ALLOW_ORIGINS: "https://kph.pjcloud.store"
+      REDIS_URL: "redis://redis:6379/0"
+      DEMO_IDENTITY_VERIFICATION: "true"
+      DEMO_IDENTITY_CODE: "000000"
+      APP_AUTO_INIT: "false"
+    expose:
+      - "8700"
+    depends_on:
+      - redis
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    networks:
+      - khp-net
+      - khp-data-net
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: "https://kph.pjcloud.store/api/v1"
+        VITE_WS_BASE_URL: "wss://kph.pjcloud.store"
+    expose:
+      - "3700"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - khp-net
+
+networks:
+  khp-net:
+    external: true
+  khp-data-net:
+    internal: true
