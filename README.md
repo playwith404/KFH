@@ -230,35 +230,15 @@
 
 ## 🛠 기술 스택
 
-### Frontend
+<div align="center">
 
-<img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-<img src="https://img.shields.io/badge/Vite_7-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
-<img src="https://img.shields.io/badge/TypeScript_5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-<img src="https://img.shields.io/badge/Tailwind_CSS-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8"/>
+| 분류 | 기술 |
+|:---:|:---|
+| **Frontend** | <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/> <img src="https://img.shields.io/badge/Vite_7-646CFF?style=for-the-badge&logo=vite&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript_5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/> <img src="https://img.shields.io/badge/Tailwind_CSS-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8"/> <br/> <img src="https://img.shields.io/badge/React_Router_7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white"/> <img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white"/> <img src="https://img.shields.io/badge/Zustand-433E38?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white"/> <img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white"/> |
+| **Backend** | <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/> <img src="https://img.shields.io/badge/Python_3.11-3776AB?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/SQLAlchemy_2.0-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white"/> <img src="https://img.shields.io/badge/Alembic-6BA81E?style=for-the-badge&logo=alembic&logoColor=white"/> <img src="https://img.shields.io/badge/Pydantic_v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white"/> <img src="https://img.shields.io/badge/JWT-111827?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/> |
+| **Database & Infra** | <img src="https://img.shields.io/badge/PostgreSQL_16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis_7-DC382D?style=for-the-badge&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white"/> <img src="https://img.shields.io/badge/Let's_Encrypt-003A70?style=for-the-badge&logo=letsencrypt&logoColor=white"/> |
 
-<img src="https://img.shields.io/badge/React_Router_7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white"/>
-<img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white"/>
-<img src="https://img.shields.io/badge/Zustand-433E38?style=for-the-badge&logo=react&logoColor=white"/>
-<img src="https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white"/>
-<img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white"/>
-
-### Backend
-
-<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python_3.11-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/SQLAlchemy_2.0-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white"/>
-<img src="https://img.shields.io/badge/Alembic-6BA81E?style=for-the-badge&logo=alembic&logoColor=white"/>
-<img src="https://img.shields.io/badge/Pydantic_v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white"/>
-<img src="https://img.shields.io/badge/JWT-111827?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/>
-
-### Database & Infra
-
-<img src="https://img.shields.io/badge/PostgreSQL_16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/Redis_7-DC382D?style=for-the-badge&logo=redis&logoColor=white"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white"/>
-<img src="https://img.shields.io/badge/Let's_Encrypt-003A70?style=for-the-badge&logo=letsencrypt&logoColor=white"/>
+</div>
 
 <br/>
 
@@ -380,7 +360,7 @@ docker compose -f docker-compose.prod.yml up -d --build
 
 | <img src="https://avatars.githubusercontent.com/u/120772177?v=4" width="120"/><br/><br/>**Krminsung**<br/><br/>[![GitHub](https://img.shields.io/badge/GitHub-Krminsung-181717?style=for-the-badge&logo=github)](https://github.com/Krminsung) | <img src="https://avatars.githubusercontent.com/u/131033715?v=4" width="120"/><br/><br/>**527NotFound**<br/><br/>[![GitHub](https://img.shields.io/badge/GitHub-527NotFound-181717?style=for-the-badge&logo=github)](https://github.com/527NotFound) | <img src="https://avatars.githubusercontent.com/u/203737204?v=4" width="120"/><br/><br/>**18choyeonwoo**<br/><br/>[![GitHub](https://img.shields.io/badge/GitHub-18choyeonwoo-181717?style=for-the-badge&logo=github)](https://github.com/18choyeonwoo) |
 |:---:|:---:|:---:|
-| <img src="https://avatars.githubusercontent.com/u/101376856?v=4" width="120"/><br/><br/>**juin925**<br/><br/>[![GitHub](https://img.shields.io/badge/GitHub-juin925-181717?style=for-the-badge&logo=github)](https://github.com/juin925) | <img src="https://avatars.githubusercontent.com/u/167386973?v=4" width="120"/><br/><br/>**nannanyeee**<br/><br/>[![GitHub](https://img.shields.io/badge/GitHub-nannanyeee-181717?style=for-the-badge&logo=github)](https://github.com/nannanyeee) | <br/><br/>**playwith404**<br/><br/>Team Project<br/><br/>[![Repository](https://img.shields.io/badge/Repository-KFH-2563EB?style=for-the-badge&logo=github)](https://github.com/playwith404/KFH) |
+| <img src="https://avatars.githubusercontent.com/u/101376856?v=4" width="120"/><br/><br/>**juin925**<br/><br/>[![GitHub](https://img.shields.io/badge/GitHub-juin925-181717?style=for-the-badge&logo=github)](https://github.com/juin925) | <img src="https://avatars.githubusercontent.com/u/167386973?v=4" width="120"/><br/><br/>**nannanyeee**<br/><br/>[![GitHub](https://img.shields.io/badge/GitHub-nannanyeee-181717?style=for-the-badge&logo=github)](https://github.com/nannanyeee) | |
 
 </div>
 
@@ -396,12 +376,6 @@ docker compose -f docker-compose.prod.yml up -d --build
 [![Live Demo](https://img.shields.io/badge/Live-kph.pjcloud.store-0F766E?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kph.pjcloud.store)
 [![Email](https://img.shields.io/badge/Email-playwith404%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:playwith404@gmail.com)
 
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://contrib.rocks/image?repo=playwith404/KFH" />
 </div>
 
 <br/>
